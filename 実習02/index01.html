@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <title></title>
+        <script>
+            $(function(){
+                var result;
+                
+                result = $(".class");
+                console.log("classがclassの要素の数:" + result.length);
+                
+                $("div").removeClass("class");
+                console.log("クラスを削除しました!!");
+                
+                result = $(".class");
+                console.log("classがclassの要素の数" + result.length);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="id1" class="class">id:id1/class:class1</div>
+        <div id="id2" class="class">id:id2/class:class2</div>
+        <p class="class2">class:class2</p>
+    </body>
+</html>
