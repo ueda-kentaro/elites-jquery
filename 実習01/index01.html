@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>jqueryの話</title>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    </head>
+    <body>
+        <button id="btn">ボタン</button>
+        <script>
+            $('#btn').on('click', function(){
+                $(this).text('ボタンでした');
+            });
+        </script>
+    </body>
+</html>
