@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>alert</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script>
+            $(function(){
+                $("#click").click(function(){
+                    alert("クリックされました!!");
+                });
+                $("[name=change]").change(function(){
+                    alert("変更されました！！");
+                });
+                $("form").submit(function(){
+                    alert("formが提出されました！！");
+                });
+                $(".onmouse").mouseover(function(){
+                    $(".message").html("マウスが乗っています!!");
+                });
+                $(".onmouse").mouseout(function(){
+                    $(".message").html("マウスが外れました！！");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="message">マウスが乗っていません</div>
+        <div class="onmouse" style="width:300px; height:100px; background-color:#EEEEEE;">マウスを乗せて下さい</div>
+        <form>
+            <input type="text" name="change" value="テキストを変更して下さい｡" size="50">
+            <button type="button" id="click">クリックして下さい</button>
+            <button type="submit">送信</button>
+        </form>
+    </body>
+</html>
